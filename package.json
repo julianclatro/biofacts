@@ -11,7 +11,8 @@
     "core-js": "^2.6.9",
     "vue": "^2.6.10",
     "vue-slider-component": "^3.0.33",
-    "vuejs-paginate": "^2.1.0"
+    "vuejs-paginate": "^2.1.0",
+    "vueperslides": "^1.20.3"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.9.0",

@@ -4,6 +4,7 @@
     <Contribute />
     <JoinTheMove />
     <BioFacts />
+    <Thanks />
   </div>
 </template>
 
@@ -12,6 +13,7 @@
   import Contribute from './components/Contribute.vue'
   import BioFacts from './components/BioFacts.vue'
   import JoinTheMove from './components/JoinTheMove.vue'
+  import Thanks from './components/Thanks.vue'
 
   export default {
     name: 'app',
@@ -20,6 +22,7 @@
       Hero,
       Contribute,
       JoinTheMove,
+      Thanks
     }
   }
 </script>

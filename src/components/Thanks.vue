@@ -11,5 +11,9 @@
 </script>
 
 <style scoped>
-
+  #thanks {
+    margin-top: 90px;
+    background: black;
+    height: 90px;
+  }
 </style>
