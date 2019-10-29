@@ -3,16 +3,24 @@
     <div class="ui container">
       <img src="../assets/logo.svg" class="ui small image" alt="biofacts">
       <div class="ui secondary right menu">
-        <a class="item">
+        <a class="item" href="#hero">
           Mision
         </a>
-        <a class="item">
+        <a class="item" href="#join-the-move">
           Sumate
         </a>
-        <a class="item">
+        <a class="item" href="#biofacts">
           Calculadora
         </a>
+      </div>
     </div>
+    <div class="item">
+      <a class="">
+        <i class="instagram icon"></i>
+      </a>
+      <a class="">
+        <i class="facebook icon"></i>
+      </a>
     </div>
   </div>
 </template>

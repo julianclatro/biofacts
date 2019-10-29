@@ -30,7 +30,8 @@
 
 <style scoped>
   #hero {
-    height: 60vh;
+    height: 100%;
+    min-height: 400px;
   }
   .ui.container.grid {
     margin-top: 60px;

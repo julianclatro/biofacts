@@ -1,8 +1,7 @@
 <template>
-  <div id="card" class="ui container">
+  <div id="biofacts" class="ui container">
     <h1>Calculadora de Materiales</h1>
-
-    <div class="ui grid" style="margin-top: 20px;">
+    <div class="ui grid">
       <div class="three wide column">
         <div>
             <h3 class="ui header">
@@ -10,19 +9,19 @@
             </h3>
             <div class="radio-toolbar">
               <input type="radio" v-model="categories" id="radioTodos" value="" checked />
-              <label for="radioTodos">Todos</label>
+              <label for="radioTodos" class="ui green button">Todos</label>
               <input type="radio" v-model="categories" id="radioAluminio" value="aluminio"/>
-              <label for="radioAluminio">Aluminio</label>
+              <label for="radioAluminio" class="ui green button">Aluminio</label>
               <input type="radio" v-model="categories" id="radioPlastico" value="plastico"/>
-              <label for="radioPlastico">Plastico</label>
+              <label for="radioPlastico" class="ui green button">Plastico</label>
               <input type="radio" v-model="categories" id="radioPet" value="pet"/>
-              <label for="radioPet">Pet</label>
+              <label for="radioPet" class="ui green button">Pet</label>
               <input type="radio" v-model="categories" id="radioVidrio" value="vidrio"/>
-              <label for="radioVidrio">Vidrio</label>
+              <label for="radioVidrio" class="ui green button">Vidrio</label>
               <input type="radio" v-model="categories" id="radioPolipropileno" value="polipropileno"/>
-              <label for="radioPolipropileno">Polipropileno</label>
+              <label for="radioPolipropileno" class="ui green button">Polipropileno</label>
               <input type="radio" v-model="categories" id="radioCarton" value="carton"/>
-              <label for="radioCarton">Carton</label>
+              <label for="radioCarton" class="ui green button">Carton</label>
             </div>
         </div>
       </div>
@@ -45,7 +44,7 @@
 // Vue.component('paginate', Paginate)
 export default {
   name: 'BioFacts',
-  el: '#card',
+  el: '#biofacts',
   data() {
     return {
       categories: [ ],
@@ -79,7 +78,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-#card {
+#biofacts {
   padding-top: 80px;
 }
 h3 {

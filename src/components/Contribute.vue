@@ -16,8 +16,7 @@
         </div>
       </div>
       <div class="eight wide column">
-        <img src="../assets/ZOMBIE_CEPILLO-01.png" alt="" class="character">
-        <img src="../assets/botella_devidrio-01.png" alt="" class="character">
+        <img src="../assets/biotag.svg" alt="">
       </div>
     </div>
   </div>
@@ -36,6 +35,7 @@
   }
   .ui.grid.container {
     padding-top: 40px;
+    padding-bottom: 40px;
   }
   .character {
     height: 320px;
