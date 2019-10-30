@@ -26,12 +26,24 @@
         </div>
       </div>
       <div class="thirteen wide column">
-        <div class="ui four stackable cards">
-          <div class="card" v-for="(product, index) in computedProducts" :key="index">
-            <img :src="product.img_url" alt="" class="ui image">
-            <div class="content">
-              <h4 class="ui header">{{product.name}}</h4>
-            </div>
+        <div class="ui three stackable cards">
+          <div class="card biocard" v-for="(product, index) in computedProducts" :key="index">
+              <img :src="product.img_url" alt="" class="ui image">
+              <div class="content">
+                <div class="content--tag">
+                  <div class="content--tag-logo">
+                    <img src="../assets/biofacts-01.svg" alt="" class="ui small image">
+                  </div>
+                  <div class="content--tag-facts">
+                    <div class="item">
+                      <h4 class="ui header">{{product.name}}</h4>
+                    </div>
+                    <div class="item fact--years">
+                      <h4 class="ui header">{{product.year}} años</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
           </div>
         </div>
       </div>
@@ -100,6 +112,9 @@ a {
   position: fixed;
   width: 0;
 }
+.fact--years {
+  padding-top: 4px;
+}
 .radio-toolbar label {
     display: block;
     color: white;
@@ -119,4 +134,47 @@ a {
 .radio-toolbar input[type="radio"]:focus + label {
     border: 1px solid #95AD7A;
 }
+.biocard {
+  position: relative;
+}
+
+.biocard .content {
+  position: absolute;
+  width: 200px;
+  bottom: 16px;
+  left: 16px;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.content--tag {
+  padding: 8px;
+  display: block;
+  border-width: medium;
+  border-style: solid;
+  border-color: #231f20;
+}
+
+.content--tag-logo {
+  padding-bottom: 8px;
+}
+
+.content--tag-facts {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: block;
+  border-bottom-style: solid;
+  border-top-style: solid;
+  border-bottom-color: #231f20;
+  border-bottom-width: 4px;
+  border-top-width: 8px;
+}
+
+.content--tag-facts .item {
+  border-bottom: solid 1px gray;
+}
+
+.content--tag-facts .item:last-child {
+  border-bottom: none;
+}
+
 </style>
