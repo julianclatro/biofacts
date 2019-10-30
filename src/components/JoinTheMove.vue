@@ -2,19 +2,23 @@
   <div id="join-the-move">
     <div class="ui container grid">
       <div class="row">
-        <div class="eight wide column">
-          <h1>Partners</h1>
-          <vueper-slides class="no-shadow" :visible-slides="3" :autoplay="true" :arrows="false" :pauseOnHover="false" :bullets="false">
-            <vueper-slide
-              v-for="(slide, i) in slides"
-              :key="i"
-              :image="slide.image"
-            ></vueper-slide>
-          </vueper-slides>
-        </div>
-        <div class="eight wide column">
-          <h1>Sumate</h1>
-          <p>Buscamos concientizar sobre la importancia de nuestro impacto en la tierra, creemos que es necesario que el ser humano se solidarice, se sienta parte del ambiente que lo rodea.</p>
+        <div class="sixteen wide column">
+          <h1>Cómo sumar tus productos</h1>
+          <div class="ui ordered list">
+            <div class="item">
+              Escribinos a <b>info@ecohouse.org.ar</b> con asunto "BIOFACTS".
+            </div>
+            <div class="item">
+              Te pasamos las etiquetas con la info ambiental de tus productos (¡ES GRATIS!).
+            </div>
+            <div class="item">
+              La insertás en el diseño del packaging.
+            </div>
+            <div class="item">
+              ¡Listo!
+            </div>
+          </div>
+          <p>Nunca fue tan fácil ser parte del cambio que queremos ver en el mundo.</p>
         </div>
       </div>
     </div>
@@ -22,26 +26,8 @@
 </template>
 
 <script>
-  import { VueperSlides, VueperSlide } from 'vueperslides';
 
   export default {
-    components: { VueperSlides, VueperSlide },
-    data: () => ({
-      slides: [
-        {
-          image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSTnSIOhuNr0lB5xDPTPyWluGZmSCxTVM9B5vfgDTA3E7PoRbOg',
-        },
-        {
-          image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTc8bfjZk0HNaNx8zQxDdf2Ey6hXCwNM5L7BEEnturw6_Dm_bNq',
-        },
-        {
-          image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSTnSIOhuNr0lB5xDPTPyWluGZmSCxTVM9B5vfgDTA3E7PoRbOg',
-        },
-        {
-          image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTc8bfjZk0HNaNx8zQxDdf2Ey6hXCwNM5L7BEEnturw6_Dm_bNq',
-        },
-      ]
-    }),
     name: 'JoinTheMove',
     el: '#join-the-move',
   }
@@ -49,6 +35,6 @@
 
 <style scoped>
   .ui.container.grid {
-    margin-top: 80px;
+    margin-top: 40px;
   }
 </style>

@@ -3,7 +3,8 @@
     <Hero />
     <Contribute />
     <JoinTheMove />
-    <BioFacts />
+    <Upcomming />
+    <WhoWeAre />
     <Thanks />
   </div>
 </template>
@@ -11,15 +12,17 @@
 <script>
   import Hero from './components/Hero.vue'
   import Contribute from './components/Contribute.vue'
-  import BioFacts from './components/BioFacts.vue'
+  import WhoWeAre from './components/WhoWeAre.vue'
   import JoinTheMove from './components/JoinTheMove.vue'
+  import Upcomming from './components/Upcomming.vue'
   import Thanks from './components/Thanks.vue'
 
   export default {
     name: 'app',
     components: {
-      BioFacts,
+      WhoWeAre,
       Hero,
+      Upcomming,
       Contribute,
       JoinTheMove,
       Thanks
@@ -35,5 +38,14 @@
     text-align: center;
     color: #2c3e50;
     margin-top: 60px;
+  }
+  p, .ordered.list .item {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  .grid--right-content {
+    padding-left: 20px;
   }
 </style>

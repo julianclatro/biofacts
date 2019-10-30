@@ -1,10 +1,5 @@
 <template>
   <div id="hero">
-    <div class="ui top fixed menu">
-      <div class="ui container">
-        <img src="../assets/logo.png" class="ui small image" alt="biofacts">
-      </div>
-    </div>
     <div class="fullscreen-bg">
       <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
           <source src="../assets/wood.mp4" type="video/mp4">
@@ -22,7 +17,7 @@
 
 <style scoped>
   #hero {
-    height: 100vh;
+    height: 50vh;
   }
 
   .fullscreen-bg {

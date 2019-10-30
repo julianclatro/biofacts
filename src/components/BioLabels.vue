@@ -1,5 +1,5 @@
 <template>
-  <div id="biofacts" class="ui container">
+  <div id="biolabels" class="ui container">
     <h1>Calculadora de Materiales</h1>
     <div class="ui grid">
       <div class="three wide column">
@@ -28,7 +28,6 @@
       <div class="thirteen wide column">
         <div class="ui three stackable cards">
           <div class="card biocard" v-for="(product, index) in computedProducts" :key="index">
-              <img :src="product.img_url" alt="" class="ui image">
               <div class="content">
                 <div class="content--tag">
                   <div class="content--tag-logo">
@@ -40,9 +39,6 @@
                     </div>
                     <div class="item fact--years">
                       <h4 class="ui header">{{product.year}} años</h4>
-                    </div>
-                    <div class="item fact--years">
-                      <h4 class="ui header">BOLSA </h4>
                     </div>
                   </div>
                 </div>
@@ -58,19 +54,26 @@
 // import Paginate from 'vuejs-paginate'
 // Vue.component('paginate', Paginate)
 export default {
-  name: 'BioFacts',
-  el: '#biofacts',
+  name: 'BioLabels',
+  el: '#biolabels',
   data() {
     return {
       categories: [ ],
       years: [ ],
       products: [
-        {name:'Vidrio', year:'4000', category:'vidrio', img_url:'http://biofacts.org/wp-content/uploads/2018/09/fact_vidrio-500x500.jpg'},
-        {name:'Botella Nueva', year:'4000', category:'vidrio', img_url:'http://biofacts.org/wp-content/uploads/2018/09/fact_vidrio-500x500.jpg'},
-        {name:'Lata de Aluminio', year:'50', category:'aluminio', img_url:'http://biofacts.org/wp-content/uploads/2018/09/fact_lata_mobile-500x500.jpg'},
-        {name:'Botella de PET', year:'150', category:'pet', img_url:'http://biofacts.org/wp-content/uploads/2018/09/fact_botella-1-500x500.jpg'},
-        {name:'Polipropileno', year:'1000', category:'polipropileno', img_url:'http://biofacts.org/wp-content/uploads/2018/09/fact_polipropileno-1-500x500.jpg'},
-        {name:'Bolsa de Plastico', year:'400', category:'plastico', img_url:'http://biofacts.org/wp-content/uploads/2018/09/fact_bolsa-500x500.jpg'},
+        {name:'Encendedor', year:'100', category:'acero+plastico' },
+        {name:'Latas', year:'200', category:'aluminio' },
+        {name:'Envases', year:'10', category:'aluminio+recubierto' },
+        {name:'Caja de Arroz', year:'1', category:'carton+reciclado' },
+        {name:'Tuvo de Papas fritas', year:'200', category:'carton+plastico+aluminio' },
+        {name:'Botella', year:'4000', category:'vidrio' },
+        {name:'Latas de Conserva', year:'60', category:'ojalata' },
+        {name:'Envoltura de Manteca', year:'25', category:'laminado+multicapa' },
+        {name:'Paquete de Harina', year:'1', category:'papel' },
+        {name:'Aljafor', year:'500', category:'papel+aluminio' },
+        {name:'Tetrabrik', year:'30', category:'tetrabrik' },
+        {name:'Gaseosa', year:'500', category:'pet' },
+        {name:'Papel Film', year:'1000', category:'pvc' }
       ],
       sortBy: 'name'
     }
@@ -93,7 +96,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-#biofacts {
+#biolabels {
   padding-top: 80px;
 }
 h3 {

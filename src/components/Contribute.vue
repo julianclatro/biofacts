@@ -4,19 +4,24 @@
       <div class="eight wide column">
         <div class="firm--petition">
           <div class="box">
-            <h1>¿Como podes ayudar?</h1>
-            <p>Estamos buscando conseguir 100 mil firmas</p>
-            <button class="ui green button firm">
+            <h1>Petición en Change.org</h1>
+            <p>Objetivo: ¡<b>100 000</b>  firmas! ¡AYUDANOS POR FAVOR!</p>
+            <button class="ui white large button firm">
               <img class="button--icon" src="../assets/firm.svg" alt="">
               <div class="button--text">
                 Firmá la Petición
               </div>
             </button>
+            <p class="disclaimer">Cuantos más seamos los que apoyamos la campaña, más ganas de participar tendrán los polítcos y las empresas.</p>
           </div>
         </div>
       </div>
-      <div class="eight wide column">
-        <img src="../assets/biotag.svg" alt="">
+      <div class="right floated eight wide column">
+        <div class="grid--right-content">
+          <div class="ui basic padded segment">
+            <img src="../assets/biowhite_tag.svg" alt="" class="ui image">
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -31,10 +36,10 @@
 
 <style scoped>
   #contribute {
-    background: #0165FE;
+    background: #09433B;
   }
   .ui.grid.container {
-    padding-top: 40px;
+    padding-top: 30px;
     padding-bottom: 40px;
   }
   .character {
@@ -47,14 +52,19 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    background: white;
   }
   .button--icon {
-    height: 32px;
+    height: 40px;
+  }
+  .disclaimer {
+    margin-top: 16px;
   }
   .button--text {
     padding-left: 8px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
+    color: #09433B;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
     font-weight: 600;
   }
 </style>

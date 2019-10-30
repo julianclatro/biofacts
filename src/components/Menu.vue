@@ -3,24 +3,21 @@
     <div class="ui container">
       <img src="../assets/logo.svg" class="ui small image" alt="biofacts">
       <div class="ui secondary right menu">
-        <a class="item" href="#hero">
-          Mision
-        </a>
-        <a class="item" href="#join-the-move">
-          Sumate
-        </a>
-        <a class="item" href="#biofacts">
-          Calculadora
-        </a>
+        <div class="item">
+          <a class="" href="https://www.instagram.com/eco.house/">
+            <img src="../assets/instagram.svg" alt="" class="ui image social--icon">
+          </a>
+          <a class="" href="https://www.facebook.com/ecohousee">
+            <img src="../assets/facebook.svg" alt="" class="ui image social--icon">
+          </a>
+          <a class="" href="https://twitter.com/ecohouseok">
+            <img src="../assets/twitter.svg" alt="" class="ui image social--icon">
+          </a>
+          <a class="" href="https://www.youtube.com/channel/UCLdMvgCeKje_BN6JsBa1YGQ">
+            <img src="../assets/youtube.svg" alt="" class="ui image social--icon">
+          </a>
+        </div>
       </div>
-    </div>
-    <div class="item">
-      <a class="">
-        <i class="instagram icon"></i>
-      </a>
-      <a class="">
-        <i class="facebook icon"></i>
-      </a>
     </div>
   </div>
 </template>
@@ -39,6 +36,11 @@
     font-weight: 600;
   }
   .secondary.menu a.item:hover {
+  }
+
+  .social--icon {
+    height: 32px;
+    margin-left: 8px;
   }
 
   .menu .container {
