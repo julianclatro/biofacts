@@ -6,12 +6,12 @@
           <div class="box">
             <h1>Petición en Change.org</h1>
             <p>Objetivo: ¡<b>100 000</b>  firmas! ¡AYUDANOS POR FAVOR!</p>
-            <button class="ui white large button firm">
+            <a class="ui white large button firm" href="www.change.org/infoambiental">
               <img class="button--icon" src="../assets/firm.svg" alt="">
               <div class="button--text">
                 Firmá la Petición
               </div>
-            </button>
+            </a>
             <p class="disclaimer">Cuantos más seamos los que apoyamos la campaña, más ganas de participar tendrán los polítcos y las empresas.</p>
           </div>
         </div>
