@@ -1,11 +1,21 @@
 <template>
   <div>
-    <Hero />
-    <Contribute />
-    <JoinTheMove />
-    <Upcomming />
-    <WhoWeAre />
-    <Thanks />
+    <div class="" v-if="!isMobile()">
+      <Hero />
+      <Contribute />
+      <JoinTheMove />
+      <Upcomming />
+      <WhoWeAre />
+      <Thanks />
+    </div>
+    <div class="" v-if="isMobile()">
+      <HeroMobile />
+      <ContributeMobile />
+      <JoinTheMoveMobile />
+      <UpcommingMobile />
+      <WhoWeAreMobile />
+      <ThanksMobile />
+    </div>
   </div>
 </template>
 
@@ -17,15 +27,37 @@
   import Upcomming from './components/Upcomming.vue'
   import Thanks from './components/Thanks.vue'
 
+  import HeroMobile from './components/mobile/HeroMobile.vue'
+  import ContributeMobile from './components/mobile/ContributeMobile.vue'
+  import WhoWeAreMobile from './components/mobile/WhoWeAreMobile.vue'
+  import JoinTheMoveMobile from './components/mobile/JoinTheMoveMobile.vue'
+  import UpcommingMobile from './components/mobile/UpcommingMobile.vue'
+  import ThanksMobile from './components/mobile/ThanksMobile.vue'
+
   export default {
     name: 'app',
+    methods: {
+     isMobile() {
+       if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+         return true
+       } else {
+         return false
+       }
+     }
+    },
     components: {
       WhoWeAre,
       Hero,
       Upcomming,
       Contribute,
       JoinTheMove,
-      Thanks
+      Thanks,
+      WhoWeAreMobile,
+      HeroMobile,
+      UpcommingMobile,
+      ContributeMobile,
+      JoinTheMoveMobile,
+      ThanksMobile
     }
   }
 </script>
