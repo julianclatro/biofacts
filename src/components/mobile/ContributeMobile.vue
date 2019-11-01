@@ -6,7 +6,7 @@
             <h1>Petición en Change.org</h1>
             <p>Objetivo: ¡<b>100 000</b>  firmas! ¡AYUDANOS POR FAVOR!</p>
             <a href="http://www.change.org/infoambiental">
-              <button class="ui white large button firm">
+              <button class="ui white fluid button firm">
                 <img class="button--icon" src="../../assets/firm.svg" alt="">
                 <div class="button--text">
                   Firmá la Petición
@@ -18,7 +18,7 @@
         </div>
         <div class="grid--right-content">
           <div class="ui basic padded segment">
-            <img src="../../assets/biowhite_tag.svg" alt="" class="ui image">
+            <img src="../../assets/lata-biofact.jpg" alt="" class="ui rounded image">
           </div>
         </div>
       </div>

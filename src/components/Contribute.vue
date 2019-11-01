@@ -21,7 +21,7 @@
       <div class="right floated eight wide column">
         <div class="grid--right-content">
           <div class="ui basic padded segment">
-            <img src="../assets/biowhite_tag.svg" alt="" class="ui image">
+            <img src="../assets/lata-biofact.jpg" alt="" class="ui rounded image">
           </div>
         </div>
       </div>
@@ -43,6 +43,9 @@
   .ui.grid.container {
     padding-top: 30px;
     padding-bottom: 40px;
+  }
+  .rounded {
+    border-radius: 24px;
   }
   .character {
     height: 320px;
