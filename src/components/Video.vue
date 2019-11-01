@@ -1,6 +1,6 @@
 <template>
   <div id="video">
-    <iframe class="iframe-round" src="https://www.youtube.com/watch?v=lIb-M4rS6pk&feature=youtu.be" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe class="iframe-round" src="https://www.youtube.com/embed/lIb-M4rS6pk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 </template>
 
