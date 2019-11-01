@@ -13,8 +13,9 @@
                 </div>
               </button>
             </a>
-            <p class="disclaimer">Cuantos más seamos los que apoyamos la campaña, más ganas de participar tendrán los polítcos y las empresas.</p>
+            <p class="disclaimer">Cuantos más seamos los que apoyamos la campaña, más ganas de participar tendrán los políticos y las empresas.</p>
             <p><b>BioFacts de los productos:</b> huella hídrica, huella de carbono, degradación, reutilización y reciclado, datos relevantes e interesantes, entre otros.</p>
+            <p>Múltiples formatos y diseños: etiquetas, símbolos o QR.</p>
           </div>
         </div>
         <div class="grid--right-content">
