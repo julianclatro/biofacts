@@ -23,7 +23,7 @@
       <div class="right floated eight wide column">
         <div class="grid--right-content">
           <div class="ui basic padded segment">
-            <img src="../assets/lata-biofact.jpg" alt="" class="ui rounded image">
+            <img src="../assets/lata-biofact.png" alt="" class="ui rounded image">
           </div>
         </div>
       </div>
